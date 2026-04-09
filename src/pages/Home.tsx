@@ -2,9 +2,10 @@ import UserDetails from "../components/UserDetails";
 import { useUsers } from "../contexts/UserContext";
 import type { User } from "../types/user";
 
+
 const Home = () => {
     const {users} = useUsers();
-    console.log(users);
+
     return (
         <>
         <table>
@@ -19,12 +20,15 @@ const Home = () => {
             <tbody>
                 {
                     users.map((user:User)=>(
-                        <tr>
-                        <td>{user.name}</td>
-                        <td>{user.email}</td>
-                        <td>{user.address.city}</td>
-                        <td>{user.company.name}</td>
-                    </tr>
+                    //     <tr>
+                    //     <td>{user.name}</td>
+                    //     <td>{user.email}</td>
+                    //     <td>{user.address.city}</td>
+                    //     <td>{user.company.name}</td>
+                    // </tr>
+
+                    <UserDetails key={user.id} user={user}/>
+                    
                     
 
                     ))
