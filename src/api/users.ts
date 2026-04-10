@@ -1,11 +1,13 @@
 import type { User } from "../types/user";
-import axios from "axios";
+import axiosInstance from "./axios";
 
 
-export const getUsers= async():Promise<User[]>=> {
+export const getUsers= async():Promise<User[]| unknown>=> {
 
-    const res = await axios.get("https://jsonplaceholder.typicode.com/users");
-    console.log("res from api", res);
-    return res.data;
+    const res = await axiosInstance.get("/users");
+    //  console.log("res from api", res);
+    if(res?.status==200)
+        return res.data;
+    return res;
 
 }

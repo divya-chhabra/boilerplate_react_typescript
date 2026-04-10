@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useUsers } from "../contexts/UserContext";
+import { useUsers } from "../hooks/useUsers";
 
 const Add= () => {
     const [formData,setFormData] = useState({name:"",email:"",city:"",company:""});

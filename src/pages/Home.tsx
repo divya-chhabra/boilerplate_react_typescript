@@ -1,10 +1,14 @@
 import UserDetails from "../components/UserDetails";
-import { useUsers } from "../contexts/UserContext";
+import { useUsers } from "../hooks/useUsers";
 import type { User } from "../types/user";
 
 
 const Home = () => {
-    const {users} = useUsers();
+    const {users,loading,error} = useUsers();
+
+    if (loading) return <p>Data is loading</p>
+
+    if (error) return <h2>Something went wrong</h2>
 
     return (
         <>
