@@ -31,24 +31,24 @@ const Add= () => {
         <form onSubmit={handleSubmit}>
             <div>
                 <label>Name :</label>{"  "}
-                <input type="text" id="name" placeholder="Enter your Name" value={formData.name} onChange={handleChange}/>
+                <input className="border mb-2" type="text" id="name" placeholder="Enter your Name" value={formData.name} onChange={handleChange}/>
             </div>
 
             <div>
                 <label>Email :</label>{"  "}
-                <input type="email" id="email" placeholder="Enter your Email" value={formData.email} onChange={handleChange}/>
+                <input className="border mb-2 px-2" type="email" id="email" placeholder="Enter your Email" value={formData.email} onChange={handleChange}/>
             </div> 
 
             <div>
                 <label>City :</label>{"  "}
-                <input type="text" id="city" placeholder="Enter your City" value={formData.city} onChange={handleChange}/>
+                <input className="border mb-2 px-2" type="text" id="city" placeholder="Enter your City" value={formData.city} onChange={handleChange}/>
             </div>
 
             <div>
                 <label>Company :</label>
-                <input type="text" id="company" placeholder="Enter your Company" value={formData.company} onChange={handleChange}/>
+                <input className="border mb-2 px-2" type="text" id="company" placeholder="Enter your Company" value={formData.company} onChange={handleChange}/>
             </div>
-            <button type="submit">Submit</button>
+            <button type="submit" className="border px-2">Submit</button>
         </form>
     );
 };
