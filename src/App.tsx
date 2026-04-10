@@ -5,7 +5,7 @@ import { UserProvider } from "./contexts/UserContext";
 function App() {
   return (
     <UserProvider>
-      <Navbar />
+      <Navbar/>
     <AppRoutes/>
     </UserProvider>
   );

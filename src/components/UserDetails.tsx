@@ -3,10 +3,10 @@ import type { User } from "../types/user";
 const UserDetails = ({user}:{user:User}) => {
     return (
         <tr>
-            <td>{user.name}</td>
-            <td>{user.email}</td>
-            <td>{user.address.city}</td>
-            <td>{user.company.name}</td>
+            <td className="border border-gray-300 px-2 py-2">{user.name}</td>
+            <td className="border border-gray-300 px-2 py-2">{user.email}</td>
+            <td className="border border-gray-300 px-2 py-2">{user.address.city}</td>
+            <td className="border border-gray-300 px-2 py-2">{user.company.name}</td>
         </tr>
     )
 }

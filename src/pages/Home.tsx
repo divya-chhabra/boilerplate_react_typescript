@@ -12,13 +12,13 @@ const Home = () => {
 
     return (
         <>
-        <table>
+        <table className="border-collapse border border-gray-600">
             <thead>
                 <tr>
-                    <th>Name</th>
-                    <th>Email</th>
-                    <th>City</th>
-                    <th>Company</th>
+                    <th className="border border-gray-300 px-2 py-2">Name</th>
+                    <th className="border border-gray-300 px-2 py-2">Email</th>
+                    <th className="border border-gray-300 px-2 py-2">City</th>
+                    <th className="border border-gray-300 px-2 py-2">Company</th>
                 </tr>
             </thead>
             <tbody>
